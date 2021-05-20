@@ -1,5 +1,18 @@
+import React from "react";
+import { useHistory } from "react-router-dom";
+
 function About() {
-  return <h1>Hello About Us</h1>;
+  const history = useHistory();
+
+  return (
+    <>
+      <button onClick={() => history.push("/user", { from: "AboutPage" })}>
+        Move to User
+      </button>
+
+      <p>Welcome To ABOUT PAGE</p>
+    </>
+  );
 }
 
 export default About;
