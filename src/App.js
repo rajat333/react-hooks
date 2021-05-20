@@ -18,6 +18,9 @@ function App() {
             <Route path="/about">
               <About />
             </Route>
+            <Route path="/about/:id">
+              <About />
+            </Route>
             <Route path="/user">
               <User />
             </Route>
